@@ -142,9 +142,6 @@ writeData(wb, "P-value Norm. Debt", wilcox$p.value, withFilter = TRUE)
 #Save data
 saveWorkbook(wb, file = "./Code analysis.xlsx", overwrite = TRUE)
 
-
-
-
 #Evolution plots----------------------------------------------------------------------------------------
 ggplot(pcData, aes(x = end, y = nLocRatio, label = ID)) + 
   geom_point() + 
